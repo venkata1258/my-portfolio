@@ -1,0 +1,274 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: white;
+    height: 90vh;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: white;
+    color: #0072ff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #e6e6e6;
+}
+
+.hero-image img {
+    width: 300px;
+    border-radius: 50%;
+}
+/* About Me Section */
+.about {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-image img {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.project-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    color: #0072ff;
+}
+
+.project-item p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.project-item .btn {
+    margin-top: 10px;
+}
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.skill-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.skill-item h3 {
+    font-size: 1.5rem;
+    color: #0072ff;
+    margin-bottom: 15px;
+}
+
+.skill-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-item ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #0072ff;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-links .btn {
+    background: white;
+    color: #0072ff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+}
+
+.contact-links .btn:hover {
+    background: #e6e6e6;
+}
+/* Footer Section */
+.footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero, .about-content, .projects .project-list, .skills-list, .contact-links {
+        flex-direction: column;
+    }
+
+    .about-content {
+        gap: 20px;
+    }
+
+    .project-item {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+
+    .contact-links .btn {
+        width: 100%;
+    }
+}

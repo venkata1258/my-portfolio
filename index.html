@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - CHERUKURI VENKATA AKSHAY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>CHERUKURI VENKATA AKSHAY</h1>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h2>Hi, I'm Akshay!</h2>
+            <p>A passionate software developer and data analyst, skilled in Python, Machine Learning, and web development.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="hero-image">
+            <img src="profile.jpg" alt="Akshay's Photo">
+        </div>
+    </section>
+    <!-- About Me Section -->
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <p>
+                I am a passionate B.Tech graduate in Computer Science Engineering with a specialization in Artificial Intelligence, 
+                skilled in Python, Java, SQL, MySQL, HTML, and CSS. With a strong foundation in Artificial Intelligence, Machine Learning, 
+                and Deep Learning, I excel at developing innovative solutions and managing data effectively. My proficiency in frontend technologies 
+                enables me to create intuitive user interfaces that complement technical implementations. Driven by a deep curiosity for uncovering 
+                insights from data and leveraging cutting-edge technologies, I am committed to advancing the fields of data science and AI 
+                through impactful and meaningful contributions.
+            </p>
+            <p>
+                I’ve worked on exciting projects, including a Music Recommendation System, AI-powered fakenews detector,Audio enhacement and Lip synchronization. With certifications in Python, Java, and a knack for data analysis, I’m focused on shaping 
+                a career as a data analyst and software developer.
+            </p>
+            <p>
+                When I’m not coding, I enjoy exploring new technologies and expanding my skill set, particularly in 
+                React and DevOps. I look forward to collaborating on impactful projects that make a difference!
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="about.jpg" alt="About Me">
+        </div>
+    </div>
+</section>
+<!-- Projects Section -->
+<section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-list">
+        <div class="project-item">
+            <h3>Music Recommendation System</h3>
+            <p>
+                A machine learning-based music recommendation system that suggests tracks, albums, and playlists 
+                based on user preferences and listening history.
+            </p>
+            <a href="https://github.com/venkata1258/music-recommendation-system" class="btn" target="_blank">View Project</a>
+        </div>
+        <div class="project-item">
+            <h3>AI-powered Fake News Detector</h3>
+            <p>
+                An AI-powered system that detects fake news using natural language processing and machine learning 
+                algorithms to classify news articles as true or false.
+            </p>
+            <a href="https://github.com/venkata1258/AI-Powered-Fake-News-Detector" class="btn" target="_blank">View Project</a>
+        </div>
+        <div class="project-item">
+            <h3>Audio Enhancement</h3>
+            <p>
+                A project focused on enhancing audio quality using signal processing techniques, aimed at improving 
+                sound clarity in noisy environments.
+            </p>
+            <a href="https://github.com/venkata1258/Audio-enhancement" class="btn" target="_blank">View Project</a>
+        </div>
+        <div class="project-item">
+            <h3>Lip Synchronization</h3>
+            <p>
+                A system that synchronizes lip movements with speech in video content, utilizing deep learning models 
+                to generate realistic animations.
+            </p>
+            <a href="https://github.com/venkata1258/Lip-Synchronization" class="btn" target="_blank">View Project</a>
+        </div>
+    </div>
+</section>
+<!-- Skills Section -->
+<section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-list">
+        <div class="skill-item">
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+        </div>
+        <div class="skill-item">
+            <h3>Web Development</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div class="skill-item">
+            <h3>Machine Learning & AI</h3>
+            <ul>
+                <li>TensorFlow</li>
+                <li>Scikit-learn</li>
+                <li>Natural Language Processing (NLP)</li>
+                <li>Deep Learning</li>
+                <li>Data Analysis</li>
+            </ul>
+        </div>
+        <div class="skill-item">
+            <h3>Tools & Technologies</h3>
+            <ul>
+                <li>SQL</li>
+                <li>MySQL</li>
+                <li>Git/GitHub</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, feel free to send me a message via email or follow me on social media!</p>
+    <div class="contact-links">
+        <a href="mailto:venkataakshay92@gmail.com" class="btn">Email Me</a>
+        <a href="https://www.linkedin.com/in/venkata-akshay-cherukuri-823865229/" class="btn" target="_blank">LinkedIn</a>
+        <a href="https://github.com/venkata1258" class="btn" target="_blank">GitHub</a>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer class="footer">
+    <p>&copy; 2025 CHERUKURI VENKATA AKSHAY. All Rights Reserved.</p>
+    <p>Designed and Developed by Me!</p>
+</footer>
+<!-- Smooth Scrolling Script -->
+<script>
+    // Select all links with hashes
+    $('a[href*="#"]').on('click', function(e) {
+        // Ensure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            e.preventDefault();
+
+            // Store the hash
+            var hash = this.hash;
+
+            // Animate the scroll to the specified section
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+                // Add hash to URL after scrolling
+                window.location.hash = hash;
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
